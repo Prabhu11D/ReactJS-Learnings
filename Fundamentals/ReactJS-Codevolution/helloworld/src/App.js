@@ -5,21 +5,12 @@ import Greet from "./components/Greet";
 
 import Welcome from "./components/Welcome";
 import Hello from "./components/Hello";
+import Message from './components/Message';
 
 function App() {
     return (
         <div className="App">
-            <Greet name="Prabhu" heroName = "Iron Man">
-                <p>Charge Me</p>
-            </Greet>
-            <Greet name="John" heroName="Thor">
-                <button>Rotate Me</button>
-            </Greet>
-            <Greet name="Jai Surya" heroName="Captain America">
-                <button>S.H.I.E.L.D</button>
-            </Greet>
-
-            <Welcome name="Jai Surya" heroName="Captain America"/>
+            <Message />
         </div>
     );
 }
