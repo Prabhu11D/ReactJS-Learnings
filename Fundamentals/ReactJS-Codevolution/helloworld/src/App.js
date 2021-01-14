@@ -8,11 +8,14 @@ import Hello from "./components/Hello";
 import Message from "./components/Message";
 import Counter from "./components/Counter";
 
+import FunctionClick from "./components/EventHandler/functionClick";
+import ClassClick from "./components/EventHandler/classClick";
+
 function App() {
     return (
         <div className="App">
-            <Greet name="Prabhu" heroName="Iron Man" />
-            <Welcome name="Prabhu" heroName="Iron Man" />
+            <FunctionClick />
+            <ClassClick />
         </div>
     );
 }
