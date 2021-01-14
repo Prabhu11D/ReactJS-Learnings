@@ -1,10 +1,10 @@
 import "./App.css";
-import Conditional from "./components/Conditional";
+import PersonList from "./components/List/PersonList";
 
 function App() {
     return (
         <div className="App">
-            <Conditional />
+            <PersonList />
         </div>
     );
 }
