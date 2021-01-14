@@ -11,11 +11,12 @@ import Counter from "./components/Counter";
 import FunctionClick from "./components/EventHandler/functionClick";
 import ClassClick from "./components/EventHandler/classClick";
 
+import EventBind from "./components/EventBind";
+
 function App() {
     return (
         <div className="App">
-            <FunctionClick />
-            <ClassClick />
+            <EventBind />
         </div>
     );
 }
