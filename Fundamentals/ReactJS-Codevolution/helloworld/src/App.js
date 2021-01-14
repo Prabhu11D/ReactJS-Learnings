@@ -1,11 +1,10 @@
 import "./App.css";
-
-import ParentComponent from "./components/Methods_as_Props/ParentComponent";
+import Conditional from "./components/Conditional";
 
 function App() {
     return (
         <div className="App">
-            <ParentComponent />
+            <Conditional />
         </div>
     );
 }
