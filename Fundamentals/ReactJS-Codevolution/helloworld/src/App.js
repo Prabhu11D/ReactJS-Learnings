@@ -1,12 +1,10 @@
 import "./App.css";
-import Inline from "./components/Styling-CSS/Inline";
-import Stylesheet from "./components/Styling-CSS/Stylesheet";
+import Form from './components/Form'
 
 function App() {
     return (
         <div className="App">
-            <Stylesheet primary={false} />
-            <Inline />
+            <Form />
         </div>
     );
 }
