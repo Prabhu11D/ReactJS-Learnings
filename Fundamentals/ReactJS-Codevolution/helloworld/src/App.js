@@ -1,10 +1,12 @@
 import "./App.css";
-import PersonList from "./components/List/PersonList";
+import Inline from "./components/Styling-CSS/Inline";
+import Stylesheet from "./components/Styling-CSS/Stylesheet";
 
 function App() {
     return (
         <div className="App">
-            <PersonList />
+            <Stylesheet primary={false} />
+            <Inline />
         </div>
     );
 }
