@@ -1,12 +1,8 @@
 import "./App.css";
-import Form from './components/Form'
+import LifeCycleA from "./components/LifeCycle/LifeCycleA";
 
 function App() {
-    return (
-        <div className="App">
-            <Form />
-        </div>
-    );
+    return <LifeCycleA />;
 }
 
 export default App;
