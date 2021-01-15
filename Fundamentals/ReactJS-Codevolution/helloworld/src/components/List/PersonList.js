@@ -1,5 +1,7 @@
 import React from "react";
 
+// Referene - https://codepen.io/gopinav/pen/gQpepq
+
 function Person({ person }) {
     return (
         <div>
@@ -36,9 +38,17 @@ function PersonList() {
             age: 21,
             skill: "PHP",
         },
+        {
+            id: 2,
+            name: "John",
+            age: 22,
+            skill: "Embedded C",
+        },
     ];
 
-    const nameList = persons.map((person) => <Person key={person.id} person={person}></Person>);
+    const nameList = persons.map((person, index) => (
+        <Person key={index} person={person}></Person>
+    ));
     return <div>{nameList}</div>;
 }
 
