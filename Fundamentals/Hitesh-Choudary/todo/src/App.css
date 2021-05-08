@@ -1,0 +1,73 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.App{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App-logo{
+    width: 100px;
+}
+
+.list li{
+    list-style-type: none;
+}
+
+.list li p{
+    display: inline;
+}
+
+.container{
+    min-width: 500px;
+    max-width: 100%;
+}
+
+input[type='text']{
+    width: 75%;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: rgb(145, 231, 227);
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.add-btn{
+    margin-left: 10px;
+    width: 20%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.list{
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+.list li{
+    position: relative;
+    background-color: rgb(152, 252, 219);
+    padding: 4px 8px;
+}
+.list li .delete-btn{
+    position: absolute;
+    right: 5px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: rgb(221, 7, 7);
+}
+.list li input{
+    margin: 5px;
+}
