@@ -1,8 +1,8 @@
 import "./App.css";
-import Table from "./components/Fragments";
+import ParentComp from "./components/PureComp";
 
 function App() {
-  return <Table />;
+  return <ParentComp />;
 }
 
 export default App;
