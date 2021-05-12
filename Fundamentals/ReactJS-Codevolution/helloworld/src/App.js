@@ -1,8 +1,8 @@
 import "./App.css";
-import LifeCycleA from "./components/LifeCycle/LifeCycleA";
+import Table from "./components/Fragments";
 
 function App() {
-    return <LifeCycleA />;
+  return <Table />;
 }
 
 export default App;
