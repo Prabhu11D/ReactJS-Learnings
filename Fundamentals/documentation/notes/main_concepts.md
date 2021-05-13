@@ -52,3 +52,28 @@
   * just return null
 
 ## Lists and Keys
+* Keys Must Only Be Unique Among Siblings
+
+## Forms
+* HTML form elements work a little bit differently from other DOM elements in React, because form elements naturally keep some internal state
+* An input form element whose value is controlled by React in this way is called a “controlled component”
+* The textarea Tag
+  * uses value attribute
+* select Tag
+  * selected attribute is replaced by value attribute in select tag
+* The file input tag
+  * it is read only so it is called "uncontrolled component"
+* Handling Multiple Inputs
+  * When you need to handle multiple controlled input elements, you can add a name attribute to each element and let the handler function choose what to do based on the value of event.target.name
+
+## Lifting State Up
+* There should be a single “source of truth” for any data that changes in a React application. Usually, the state is first added to the component that needs it for rendering. Then, if other components also need it, you can lift it up to their closest common ancestor. Instead of trying to sync the state between different components, you should rely on the top-down data flow
+
+## Composition vs Inheritance
+  
+## Thinking in React
+* Step 1: Break The UI Into A Component Hierarchy
+* Step 2: Build A Static Version in React
+* Step 3: Identify The Minimal (but complete) Representation Of UI State
+* Step 4: Identify Where Your State Should Live
+* Step 5: Add Inverse Data Flow
