@@ -1,0 +1,18 @@
+.logout {
+  display: flex;
+  justify-content: flex-end;
+}
+.logout a {
+  padding: 12px 8px;
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &:hover {
+    transition: all 50ms linear;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}

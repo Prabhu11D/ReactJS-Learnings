@@ -1,0 +1,31 @@
+input,
+textarea {
+  padding: 8px;
+  margin-top: 16px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.397);
+  width: 30%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(128, 128, 128, 0.5);
+}
+
+input:hover,
+textarea:hover {
+  border-color: black;
+}
+
+input:focus,
+textarea:focus {
+  border-width: 2px;
+  padding: 7px;
+  border-color: #2a87ff;
+}
+
+textarea {
+  width: 80%;
+  resize: vertical;
+}

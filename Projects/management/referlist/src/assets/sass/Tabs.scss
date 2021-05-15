@@ -1,0 +1,23 @@
+.tabs li {
+  color: #757575;
+  cursor: pointer;
+  font-weight: 500;
+  height: 50px;
+  display: flex;
+  padding-left: 15%;
+  align-items: center;
+  line-height: 1.5;
+  font-size: 16px;
+  transition: all 0ms ease-in-out;
+  font-family: "Open Sans", sans-serif;
+
+  &:hover {
+    background-color: #69a9fd13;
+  }
+  &.active {
+    background-color: #69a9fd13;
+    color: #2a87ff;
+    font-size: 17px;
+    padding-left: calc(15% + 2px);
+  }
+}

@@ -1,0 +1,47 @@
+.price-table {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+
+  div {
+    padding: 20px;
+    box-shadow: 0 2px 7px 0px rgba(0, 0, 0, 0.1);
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: flex-start;
+
+    .plan,
+    .price {
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    .price {
+      font-size: 1.25rem;
+      margin: 10px auto;
+    }
+
+    ul {
+      margin-top: 40px;
+      padding: 20px;
+    }
+
+    li {
+      margin-left: 20px;
+      color: #616161;
+    }
+
+    &:first-child{
+      background-color: #E3F2FD;
+    }
+
+   &:nth-child(2):hover, 
+   &:nth-child(3):hover{
+      background-color: #e3f2fd2d;
+    }
+  }
+}

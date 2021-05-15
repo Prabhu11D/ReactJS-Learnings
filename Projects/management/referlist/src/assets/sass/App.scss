@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+@import "./Company.scss";
+@import "./Tabs.scss";
+@import "./Cardless.scss";
+@import "./Card.scss";
+@import "./button.scss";
+@import "./price-table.scss";
+@import "./Setup.scss";
+@import "./TextField.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  font-family: "Open sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.left-container {
+  position: fixed;
+  top: 0;
+  width: 200px;
+}
+
+.right-container {
+  width: 100%;
+  margin-left: 200px;
+  min-height: 100vh;
+  background-color: #fafafa;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.123);
+  padding: 10px 24px;
+}
