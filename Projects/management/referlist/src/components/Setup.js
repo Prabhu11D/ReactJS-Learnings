@@ -72,7 +72,7 @@ function Setup() {
         desc="What's the URL of your website where you'll host your sign-up form?"
       >
         <TextField
-          type="text"
+          type="url"
           placeholder="http://referlist.co"
           returnBack={(value) => saveDetail("WebsiteURL", value)}
           required="required"

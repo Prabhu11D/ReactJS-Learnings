@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "narciso83@gmail.com",
+      "SignUpDate": "Nov 12 1:00pm",
+      "verified": "Yes",
+      "referralCode": "qwerd"
+    },
+    {
+      "id": 2,
+      "email": "pavel@aol.com",
+      "SignUpDate": "Nov 12 6:30pm ",
+      "verified": "Yes"
+    },
+    {
+      "id": 3,
+      "email": "ledner.gregory@gmail.com",
+      "SignUpDate": "Nov 13 2:00pm",
+      "verified": "No",
+      "referralCode": "dleke"
+    },
+    {
+      "id": 4,
+      "email": "bode.jazmyn@hotmail.com",
+      "SignUpDate": "Nov 13 3:33pm",
+      "verified": "Yes",
+      "referralCode": "fvsak"
+    },
+    {
+      "id": 5,
+      "email": "green74@hotmail.com",
+      "SignUpDate": "Nov 13 4:14pm",
+      "verified": "No"
+    },
+    {
+      "id": 6,
+      "email": "greta.rosenbaum@zboncak.com",
+      "SignUpDate": "Nov 14 4:04am",
+      "verified": "Yes"
+    },
+    {
+      "id": 7,
+      "email": "emerald49@yahoo.com",
+      "SignUpDate": "Nov 15 1:11pm",
+      "verified": "Yes",
+      "referralCode": "pcsid"
+    },
+    {
+      "id": 8,
+      "email": "foreilly@yahoo.com",
+      "SignUpDate": "Nov 16 7:01pm",
+      "verified": "Yes",
+      "referralCode": "xsrvx"
+    },
+    {
+      "id": 9,
+      "email": "demetris.roob@grimes.com",
+      "SignUpDate": "Nov 16 8:20pm",
+      "verified": "No"
+    },
+    {
+      "id": 10,
+      "email": "kutch.jarrett@hermann.biz",
+      "SignUpDate": "Nov 17 7:00pm",
+      "verified": "Yes",
+      "referralCode": "dde34"
+    },
+    {
+      "id": 11,
+      "email": "mpowlowski@gmail.com",
+      "SignUpDate": "Nov 17 8:21pm",
+      "verified": "Yes",
+      "referralCode": "cerre"
+    },
+    {
+      "id": 12,
+      "email": "akash2021@gmail.com",
+      "SignUpDate": "Nov 18 7:21pm",
+      "verified": "Yes",
+      "referralCode": "ctrre"
+    }
+  ]
+}

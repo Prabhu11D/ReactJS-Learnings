@@ -31,6 +31,12 @@ p.text {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 500px) {
+  .charCount {
+    margin-right: 0%;
+  }
+}
+
 .color-btn {
   display: flex;
   align-items: center;

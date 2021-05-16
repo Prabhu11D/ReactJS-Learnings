@@ -35,13 +35,27 @@
       color: #616161;
     }
 
-    &:first-child{
-      background-color: #E3F2FD;
+    &:first-child {
+      background-color: #e3f2fd;
     }
 
-   &:nth-child(2):hover, 
-   &:nth-child(3):hover{
+    &:nth-child(2):hover,
+    &:nth-child(3):hover {
       background-color: #e3f2fd2d;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .price-table {
+    flex-direction: column;
+
+    div {
+      width: 100%;
+
+      ul {
+        width: 100%;
+      }
     }
   }
 }

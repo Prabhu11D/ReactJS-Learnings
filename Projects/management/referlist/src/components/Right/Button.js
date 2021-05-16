@@ -14,7 +14,7 @@ function Button(props) {
     setTimeout(() => setClick(false), 600);
   }
   return (
-    <button onClick={rippleEffect}>
+    <button className="rippleBtn" onClick={rippleEffect}>
       {props.name}
       {click && (
         <span

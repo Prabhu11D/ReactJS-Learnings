@@ -20,12 +20,8 @@ function Billing() {
       >
         <CreditCardForm />
         <div
-          style={{
-            width: "400px",
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "20px",
-          }}
+          className="creditCardBtn"
+
         >
           <Button name="SAVE" />
         </div>

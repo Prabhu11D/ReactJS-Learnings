@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Card from "../../assets/card.png";
-import style from "../../assets/sass/CredirCard.module.scss";
 
 function CreditCardForm() {
   const [value, setValue] = useState({
@@ -9,13 +8,10 @@ function CreditCardForm() {
     CVC: "",
   });
   return (
-    <form className={style.form}>
-      <img className={style.img} alt="creditcard logo" src={Card} />
+    <form className="form">
+      <img className="img" alt="creditcard logo" src={Card} />
       <input
-        className={style.input}
-        style={{
-          width: "200px",
-        }}
+        className="input card-number"
         type="number"
         value={value.CardNumber}
         onChange={(e) => {
@@ -30,10 +26,7 @@ function CreditCardForm() {
       />
       <input
         type="text"
-        className={style.input}
-        style={{
-          width: "70px",
-        }}
+        className="input date"
         value={value.Date}
         onChange={(e) => {
           let num = e.target.value;
@@ -46,15 +39,7 @@ function CreditCardForm() {
         max="4"
         placeholder="MM / YY"
       />
-      <input
-        style={{
-          width: "40px",
-        }}
-        className={style.input}
-        type="number"
-        max="3"
-        placeholder="CVC"
-      />
+      <input className="input cvc" type="number" max="3" placeholder="CVC" />
     </form>
   );
 }

@@ -8,6 +8,14 @@
   border-bottom: 1px solid rgba(128, 128, 128, 0.5);
   box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.3),
     -1px -1px 2px rgba(128, 128, 128, 0.3);
+
+  .card-number {
+    flex: 3;
+  }
+  .cvc,
+  .date {
+    flex: 1;
+  }
 }
 
 .img {
@@ -18,10 +26,11 @@
 
 .input {
   padding: 0;
-  margin: 0;
+  margin: 2px;
   font-size: 1rem;
   outline: none;
   border: none;
+  transition: all 200ms linear;
 
   &:placeholder {
     color: rgba(128, 128, 128, 0.5);
@@ -46,4 +55,22 @@ input::-webkit-outer-spin-button {
 }
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    width: 100%;
+    padding: 10px;
+
+    .img {
+      display: none;
+    }
+
+    .card-number:focus ~ .input {
+      flex: 1;
+    }
+    .card-number:focus {
+      flex: 5;
+    }
+  }
 }
