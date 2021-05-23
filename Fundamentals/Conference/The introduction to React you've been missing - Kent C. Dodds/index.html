@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="normal"></div>
+    <div id="root"></div>
+    <script type="text/babel">
+      // window.root;
+      const root = document.getElementById("root");
+      const normal = document.getElementById("normal");
+      const div = document.createElement("div");
+      div.textContent = "Hello React JS";
+      div.className = "header";
+      normal.appendChild(div);
+
+      // const element = React.createElement("div", {
+      //   children: [
+      //     "Hello React Element",
+      //     React.createElement("span", {}, " Children Span"),
+      //   ],
+      //   className: "element",
+      // });
+
+      /**
+       *  JSX is similar to String Template Literals
+       * 
+      */
+
+      const element = (
+        <div>
+          Hello React Element
+          <span>Children Span</span>
+        </div>
+      );
+
+      console.dir(element);
+      ReactDOM.render(element, root);
+    </script>
+  </body>
+</html>
