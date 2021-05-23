@@ -9,6 +9,8 @@ import React from "react";
 // import CleanUp from "./components/useEffect/CleanUp";
 // import IncorrectDependency from "./components/useEffect/IncorrectDependency";
 
+import Color from "./components/useContext/Color";
+
 function App() {
   return (
     <div>
@@ -27,6 +29,7 @@ function App() {
       {/* <IncorrectDependency /> */}
 
       {/* ++++++++++++++++ useContext ++++++++++++++++++++++ */}
+      <Color />
     </div>
   );
 }
