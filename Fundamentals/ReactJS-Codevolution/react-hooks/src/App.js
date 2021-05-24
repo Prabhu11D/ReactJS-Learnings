@@ -9,7 +9,11 @@ import React from "react";
 // import CleanUp from "./components/useEffect/CleanUp";
 // import IncorrectDependency from "./components/useEffect/IncorrectDependency";
 
-import Color from "./components/useContext/Color";
+// import Color from "./components/useContext/Color";
+
+// import Counter from "./components/useReducer/Counter";
+// import MainComp from "./components/useReducer/with-useContext/MainComp";
+// import FetchData from "./components/useReducer/FetchData";
 
 function App() {
   return (
@@ -29,7 +33,12 @@ function App() {
       {/* <IncorrectDependency /> */}
 
       {/* ++++++++++++++++ useContext ++++++++++++++++++++++ */}
-      <Color />
+      {/* <Color /> */}
+
+      {/* ++++++++++++++ useReducer +++++++++++++++++++++++++ */}
+      {/* <Counter /> */}
+      {/* <MainComp /> */}
+      {/* <FetchData /> */}
     </div>
   );
 }
