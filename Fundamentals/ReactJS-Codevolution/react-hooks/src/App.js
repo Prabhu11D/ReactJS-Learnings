@@ -15,7 +15,14 @@ import React from "react";
 // import MainComp from "./components/useReducer/with-useContext/MainComp";
 // import FetchData from "./components/useReducer/FetchData";
 
+// import ParentComponent from "./components/useCallback/ParentComponent";
+
+// import Counter from "./components/useMemo/Counter";
+
+// import Timer from "./components/useRef/Timer";
+
 function App() {
+  console.log("App Comp");
   return (
     <div>
       <h1>App Component</h1>
@@ -39,6 +46,15 @@ function App() {
       {/* <Counter /> */}
       {/* <MainComp /> */}
       {/* <FetchData /> */}
+
+      {/* ++++++++++++++ useCallback ++++++++++++++++++++++++ */}
+      {/* <ParentComponent /> */}
+
+      {/* ++++++++++++++ useMemo ++++++++++++++++++++++++++++ */}
+      {/* <Counter /> */}
+
+      {/* ++++++++++++ useRef +++++++++++++++++++++++++++++++++ */}
+      {/* <Timer /> */}
     </div>
   );
 }
