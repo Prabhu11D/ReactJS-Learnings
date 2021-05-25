@@ -21,6 +21,10 @@ import React from "react";
 
 // import Timer from "./components/useRef/Timer";
 
+// import DocumentTitle from "./components/useCustomHooks/DocumentTitle";
+// import Counter from "./components/useCustomHooks/Counter";
+// import UserForm from "./components/useCustomHooks/UserForm";
+
 function App() {
   console.log("App Comp");
   return (
@@ -55,6 +59,11 @@ function App() {
 
       {/* ++++++++++++ useRef +++++++++++++++++++++++++++++++++ */}
       {/* <Timer /> */}
+
+      {/* +++++++++++++ useCustomHooks ++++++++++++++++++++++++ */}
+      {/* <DocumentTitle /> */}
+      {/* <Counter /> */}
+      {/* <UserForm /> */}
     </div>
   );
 }
