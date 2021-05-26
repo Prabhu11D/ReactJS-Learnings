@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  text-align: center;
+}
+
+nav{
+  background-color: rgb(54, 71, 77);
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  color: #eee;
+  min-height: 10vh;
+}
+
+nav li,
+nav p{
+  font-size: 1.3rem;
+}
+
+nav ul{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+h2{
+  margin-top: 30px;
+}
