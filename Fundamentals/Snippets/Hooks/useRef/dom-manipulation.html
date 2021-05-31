@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <h2>Box Animation</h2>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function App() {
+        const [width, setWidth] = React.useState(100);
+        const [widthAction, setWidthAction] = React.useState('Increase Width');
+        const [flipDirection, setFlipDirection] = React.useState(true);
+        const boxRef = React.useRef(null);
+
+        const boxStyle = {
+          width: '100px',
+          height: '100px',
+          backgroundColor: 'red',
+          marginBottom: '10px',
+          transition: 'all 100ms ease-in-out',
+          borderRadius: '10px',
+        };
+
+        React.useEffect(() => {
+          if (width === 200) {
+            setFlipDirection(false);
+          } else if (width === 100) {
+            setFlipDirection(true);
+          }
+        }, [width]);
+
+        const boxWidth = () => {
+          console.log(boxRef);
+          setWidth((w) => {
+            if (flipDirection) {
+              setWidthAction('Increase Width');
+              return w + 10;
+            } else {
+              setWidthAction('Decrease Width');
+              return w - 10;
+            }
+          });
+
+          boxRef.current.style.width = `${width}px`;
+        };
+
+        return (
+          <>
+            <div className="box" style={boxStyle} ref={boxRef}></div>
+            <button onClick={boxWidth}>{widthAction}</button>
+          </>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+  </body>
+</html>
