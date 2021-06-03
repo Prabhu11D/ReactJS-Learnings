@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/**************** JOB LIST ***************** */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.logo img {
+  width: 60px;
+  object-fit: cover;
+}
+
+.job-search {
+  width: 60%;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+}
+.job-search input {
+  display: block;
+  width: calc(100% - 150px);
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid rgba(17, 128, 192, 0.397);
+  background-color: #eee;
+}
+.job-search input:hover {
+  border: 2px solid rgba(17, 128, 192, 1);
+  padding: 4px 19px;
+}
+.job-search input:focus {
+  border: 2px solid rgba(17, 128, 192, 1);
+  padding: 4px 19px;
+  box-shadow: 1px 1px 10px rgba(17, 128, 192, 0.493);
+}
+
+.job-search button {
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: rgb(17, 128, 192);
+  color: #eee;
+  width: 130px;
+  border-radius: 5px;
+  transition: transform 100ms linear;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.job-search button:active {
+  transform: translateX(-10px);
+}
+.job-search button:active,
+.job-search button:hover {
+  background-color: rgb(0, 108, 170);
+  box-shadow: 1px 1px 10px rgba(17, 128, 192, 0.493);
+}

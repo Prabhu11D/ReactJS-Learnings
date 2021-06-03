@@ -1,0 +1,108 @@
+#portal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+
+.portal-container {
+  width: 100vw;
+  height: 100%;
+  transform: translateY(-200%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: show-portal 400ms ease-out forwards;
+}
+
+@keyframes show-portal {
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.job-details {
+  padding: 30px 20px 20px 40px;
+  min-width: 70%;
+  max-width: 800px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3), -1px -1px 20px rgba(0, 0, 0, 0.3);
+  min-height: 90%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.job-details .title {
+  font-size: 1.6rem;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+}
+.job-details .company {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.job-details .description {
+  width: 80%;
+  font-size: 1.1rem;
+  letter-spacing: 0.1px;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-indent: 40px;
+  margin-bottom: 20px;
+  /* background-color: rebeccapurple; */
+}
+
+.job-details .experience {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.job-details .skill {
+  display: inline-block;
+  margin: 3px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #ccc;
+}
+
+.job-details .apply {
+  cursor: pointer;
+  min-width: 200px;
+  border-radius: 5px;
+  position: absolute;
+  padding: 7px 20px;
+  bottom: 40px;
+  font-size: 1.1rem;
+  border: none;
+  background-color: rgba(17, 128, 192, 1);
+  transition: all 100ms linear;
+  color: white;
+  right: 50px;
+}
+
+.job-details .apply:hover,
+.job-details .apply:active {
+  background-color: rgb(4, 100, 155);
+}
+
+.job-details .applied {
+  position: absolute;
+  background-color: rgb(99, 253, 138);
+  top: 40px;
+  padding: 4px 20px;
+  color: rgb(24, 24, 24);
+  font-weight: 500;
+  border-radius: 30px;
+  right: 50px;
+}
+
+.skills p{
+  margin-bottom: 10px;
+  font-weight: 500;
+}
