@@ -91,6 +91,11 @@
   right: 50px;
 }
 
+.submit:hover,
+.submit:active {
+  background-color: rgb(1, 101, 158);
+}
+
 .form-group span {
   font-size: 0.9rem;
   margin-bottom: 5px;

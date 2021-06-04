@@ -45,17 +45,26 @@ class ApplyJob extends Component<IProps, IState> {
 
   validateInput = () => {
     const { firstname, lastname, aboutme, email } = this.state;
-    const stringValidate = (name: string, maxChar: number) => {
-      const letters = /^[a-zA-Z\s]*$/;
+    const stringValidate = (
+      name: string,
+      lableName: string,
+      minChar: number,
+      maxChar: number
+    ) => {
+      const alphabet = /^[a-zA-Z\s]*$/;
       let message = 'correct';
-      if (name.length > maxChar) message = 'Name must less than 16 characters';
-      else if (name.length === 0) message = 'Name Required';
-      else if (!name.match(letters)) message = 'Name must be alphabets';
+      if (name.length > maxChar)
+        message = `${lableName} must be less than ${maxChar} characters`;
+      else if (name.length === 0) message = `${lableName} Required`;
+      else if (name.length < minChar)
+        message = `${lableName} must be greater than ${minChar} characters`;
+      else if (!name.match(alphabet))
+        message = `${lableName} must be alphabets`;
 
       return message;
     };
 
-    let firstNameError = stringValidate(firstname, 16);
+    let firstNameError = stringValidate(firstname, 'FirstName', 8, 16);
     if (firstNameError !== 'correct') {
       this.setState({
         errorFirstname: firstNameError,
@@ -63,7 +72,7 @@ class ApplyJob extends Component<IProps, IState> {
       return false;
     }
 
-    let lastNameError = stringValidate(lastname, 16);
+    let lastNameError = stringValidate(lastname, 'LastName', 8, 16);
     if (lastNameError !== 'correct') {
       this.setState({
         errorLastname: lastNameError,
@@ -71,21 +80,27 @@ class ApplyJob extends Component<IProps, IState> {
       return false;
     }
 
-    let aboutMeError = stringValidate(aboutme, 200);
-    if (aboutMeError !== 'correct') {
+    if (!email) {
       this.setState({
-        errorAboutMe: aboutMeError,
+        errorEmail: 'Email Required',
       });
       return false;
     }
 
     let emailRegEx =
-      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      /^([a-z0-9]+)(?!.*\.\.)([a-z0-9\.]+)([a-z0-9])@?([a-z0-9-]+).([a-z]+).?([a-z]+)$/;
     if (!email.match(emailRegEx)) {
       this.setState({
         errorEmail: 'Invalid Email Id',
       });
+      return false;
+    }
 
+    let aboutMeError = stringValidate(aboutme, 'About me', 20, 200);
+    if (aboutMeError !== 'correct') {
+      this.setState({
+        errorAboutMe: aboutMeError,
+      });
       return false;
     }
 
