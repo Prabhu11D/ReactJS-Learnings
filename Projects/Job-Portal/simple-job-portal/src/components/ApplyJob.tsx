@@ -88,7 +88,7 @@ class ApplyJob extends Component<IProps, IState> {
     }
 
     let emailRegEx =
-      /^([a-z0-9]+)(?!.*\.\.)([a-z0-9\.]+)([a-z0-9])@?([a-z0-9-]+).([a-z]+).?([a-z]+)$/;
+      /^([a-z0-9]+)(?!.*\.\.)([a-z0-9.]+)([a-z0-9]+)@([a-z0-9-]+)\.([a-z]+)\.?([a-z]+)$/;
     if (!email.match(emailRegEx)) {
       this.setState({
         errorEmail: 'Invalid Email Id',

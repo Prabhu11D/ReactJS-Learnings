@@ -12,10 +12,12 @@ class JobDetail extends Component<Props> {
   divContainerRef = React.createRef<HTMLDivElement>();
   divDetailRef = React.createRef<HTMLDivElement>();
 
-  handleSetShowJob = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (this.divContainerRef.current === e.target) {
-      this.props.setShowJob(null);
-      this.props.setApply(false);
+  handleSetShowJob = (e: React.MouseEvent<HTMLElement>) => {
+    if (this.divContainerRef.current !== null) {
+      if (this.divContainerRef.current === e.target) {
+        this.props.setShowJob(null);
+        this.props.setApply(false);
+      }
     }
   };
 
@@ -49,10 +51,7 @@ class JobDetail extends Component<Props> {
           {alreadyApplied ? (
             <span className="applied">Applied</span>
           ) : (
-            <button
-              className="apply"
-              onClick={() => setApply(true)}
-            >
+            <button className="apply" onClick={() => setApply(true)}>
               Apply
             </button>
           )}
