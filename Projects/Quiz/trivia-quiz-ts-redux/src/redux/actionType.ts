@@ -1,0 +1,7 @@
+export const FETCH_QUESTIONS = 'FETCH_QUESTIONS';
+export const SET_LOADING = 'SET_LOADING';
+export const SET_GAME_OVER = 'SET_GAME_OVER';
+export const SET_SCORE = 'SET_SCORE';
+export const SET_QUESTION_NUMBER = 'SET_QUESTION_NUMBER';
+export const SET_USER_ANSWER = 'SET_USER_ANSWER';
+export const SET_INITIAL = 'SET_INITIAL';
