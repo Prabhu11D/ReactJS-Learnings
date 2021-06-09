@@ -25,9 +25,16 @@ class Cart extends Component<Props> {
       .toFixed(2);
   };
 
+  componentDidMount() {
+    this.props.setTotalPrice(+this.totalPrice());
+  }
+
+  componentDidUpdate() {
+    this.props.setTotalPrice(+this.totalPrice());
+  }
+
   render() {
-    const { cartItems, totalPrice, setTotalPrice } = this.props;
-    setTotalPrice(+this.totalPrice());
+    const { cartItems, totalPrice } = this.props;
     return ReactDOM.createPortal(
       <div
         onClick={this.closeCart}
