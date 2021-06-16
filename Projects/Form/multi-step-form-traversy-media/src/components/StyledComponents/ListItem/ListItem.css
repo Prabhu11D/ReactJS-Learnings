@@ -1,0 +1,17 @@
+.ListItem{
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.ListItem h4{
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
+.ListItem p{
+  font-size: 1rem;
+  color: #333;
+  margin-top: 5px;
+}

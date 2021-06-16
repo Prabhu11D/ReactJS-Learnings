@@ -1,0 +1,20 @@
+.text-field {
+  padding: 10px;
+  text-align: center;
+}
+
+.text-field input {
+  font-size: 1.1rem;
+  border: none;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 10px;
+  width: 400px;
+  border-bottom: 1px solid rgba(124, 124, 124, 0.541);
+  transition: all 200ms linear;
+}
+
+.text-field input:focus {
+  border-bottom: 1px solid black;
+  margin-bottom: -1px;
+}
