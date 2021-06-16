@@ -1,10 +1,12 @@
 import React from 'react';
-import SimpleProgressBar from './progress-bar/simple-linear-bar';
+// import SimpleProgressBar from './progress-bar/simple-linear-bar';
+import SimpleCircleProgressBar from './progress-bar/SimpleCircleProgressBar';
 
 function App() {
   return (
     <div>
-      <SimpleProgressBar />
+      {/* <SimpleProgressBar /> */}
+      <SimpleCircleProgressBar />
     </div>
   );
 }
