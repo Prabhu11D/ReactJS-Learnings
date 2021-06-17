@@ -1,0 +1,22 @@
+.country-picker {
+  text-align: center;
+  outline: none;
+}
+
+.country-picker select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  width: 300px;
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+.country-picker select option{
+  background-color: red;
+}
