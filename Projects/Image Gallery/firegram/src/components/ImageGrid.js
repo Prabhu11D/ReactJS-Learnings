@@ -1,5 +1,6 @@
 import React from 'react';
 import useFirestore from '../hooks/useFirestore';
+import { motion } from 'framer-motion';
 
 function ImageGrid({ setImg }) {
   const { docs } = useFirestore('images');
@@ -8,13 +9,14 @@ function ImageGrid({ setImg }) {
     <div className="img-grid">
       {docs &&
         docs.map((doc) => (
-          <div
+          <motion.div
+            layout
             className="img-wrap"
             key={doc.id}
             onClick={() => setImg(doc.url)}
           >
             <img src={doc.url} alt="Uploaded" />
-          </div>
+          </motion.div>
         ))}
     </div>
   );
