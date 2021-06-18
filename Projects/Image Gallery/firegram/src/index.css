@@ -80,6 +80,19 @@ label:hover {
   grid-gap: 40px;
   transition: all 10s linear;
 }
+
+@media only screen and (max-width: 600px) {
+  .img-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .img-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .img-wrap {
   overflow: hidden;
   height: 0;
