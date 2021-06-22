@@ -1,5 +1,4 @@
 import React, { ChangeEvent, Component } from 'react';
-import job_logo from '../assets/job_logo.png';
 import JobList from './JobList';
 import { rootState } from '../redux/store';
 import { connect } from 'react-redux';
@@ -45,9 +44,6 @@ class JobPortal extends Component<IProps, IState> {
     return (
       <div>
         <div className="header">
-          <div className="logo">
-            <img src={job_logo} alt="Job Portal Logo" />
-          </div>
           <form className="job-search" onSubmit={this.handleSubmit}>
             <input
               id="title"

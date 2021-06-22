@@ -12,10 +12,13 @@ interface JobCardProps {
 }
 
 const JobCard = (props: JobCardProps) => (
-  <div className="job-card" onClick={() => props.setShowJob(props.details.id)}>
+  <div
+    className="card p-2 mb-3"
+    onClick={() => props.setShowJob(props.details.id)}
+  >
     {props.applied ? <p className="applied">Applied</p> : ''}
-    <h2>{props.details.title}</h2>
-    <p>{props.details.company}</p>
+    <h2 className='card-text h4'>{props.details.title}</h2>
+    <p className='card-text  h6'>{props.details.company}</p>
   </div>
 );
 
