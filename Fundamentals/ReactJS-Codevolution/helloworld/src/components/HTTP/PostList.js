@@ -13,13 +13,14 @@ class PostList extends Component {
 
   componentDidMount() {
     axios
-      .get("https://jsonplaceholder.typicode.com/posqts")
+      .get("https://jsonplaceholder.typicode.com/posts")
       .then((res) =>
         this.setState({
           posts: res.data,
         })
       )
       .catch((err) => {
+        console.log(err);
         this.setState({ errorMsg: "Error While Getting Post" });
       });
   }

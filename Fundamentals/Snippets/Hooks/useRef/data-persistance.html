@@ -28,15 +28,19 @@
 
       function Counter() {
         const [count, setCounter] = useState(0);
-        const id = useRef(null)
+        console.log("count -> ", count);
+        const id = useRef(null);
+        console.log("Component Inside");
 
         const clear = () => window.clearInterval(id.current);
 
         useEffect(() => {
+          console.log("Inside useEffect");
           id.current = window.setInterval(() => {
             setCounter((c) => c + 1);
-          }, 1000);
-          console.log(`Running Counter - ${id.current}`);
+            console.log(`Running Counter - ${id.current}`);
+          }, 2000);
+          console.log({id});
 
           return () => {
             console.log(`Unmounting - ${id.current}`);
@@ -51,7 +55,7 @@
           </>
         );
       }
-
+      console.dir({Counter, useEffect, useState, useRef});
       ReactDOM.render(<Counter />, document.getElementById('root'));
     </script>
   </body>

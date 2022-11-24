@@ -21,11 +21,13 @@
 
     <script type="text/babel">
       function App() {
+        const [I, setI] = React.useState(0);
+        console.log("Inside the APP", I);
         const [width, setWidth] = React.useState(100);
         const [widthAction, setWidthAction] = React.useState('Increase Width');
         const [flipDirection, setFlipDirection] = React.useState(true);
         const boxRef = React.useRef(null);
-
+        // console.log({boxRef});
         const boxStyle = {
           width: '100px',
           height: '100px',
@@ -44,13 +46,17 @@
         }, [width]);
 
         const boxWidth = () => {
-          console.log(boxRef);
+          // console.log(boxRef);
+          setI(i => {
+            console.log("I -> ", i);
+            return ++i;
+          });
           setWidth((w) => {
             if (flipDirection) {
-              setWidthAction('Increase Width');
+              //setWidthAction('Increase Width');
               return w + 10;
             } else {
-              setWidthAction('Decrease Width');
+              //setWidthAction('Decrease Width');
               return w - 10;
             }
           });
